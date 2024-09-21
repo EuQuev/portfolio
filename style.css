@@ -1,0 +1,141 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root {
+  --cor-1: #E5E5CB;
+  --cor-2: #251812;
+  --cor-3: #5a3d25;
+  --cor-4: #D5CEA3;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  background-color: var(--cor-1);
+  color: var(--cor-2);
+  font-family: "Roboto Serif", serif;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 5rem;
+}
+
+.cabecalho__menu__link {
+  color: var(--cor-3);
+  text-decoration:double;  
+  font-family: "Roboto Serif", serif;
+  font-size: 34;
+  font-weight: 600;
+}
+
+.cabecalho__menu__link:hover {
+  background-color: var(--cor-4);
+}
+
+/* Seção principal */
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.12rem;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.titulo-destaque {
+  color: var(--cor-3);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.3rem;
+    font-family: "Roboto Serif", serif;
+}
+
+
+/* Botões de ancora*/
+.apresentacao__botao {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.apresentacao__botao__subtitulo {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 1.5rem;
+}
+
+.apresentacao__botao__link {
+  display: flex;
+  justify-content: center;
+  gap: 1.12rem;
+  border: 0.125rem solid var(--cor-3);
+  color: var(--cor-2);
+  width: 50%;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.24rem;
+  padding: 1.34rem 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.apresentacao__botao__link:hover {
+    background-color: var(--cor-4);
+}
+
+.apresentacao__imagem {
+  width: 50%;
+}
+
+.rodape {
+  padding: 1.43rem;
+  text-align: center;
+  color: var(--cor-1);
+  background-color: var(--cor-3);
+  font-family: "Roboto Serif", serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 5rem;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
+}
